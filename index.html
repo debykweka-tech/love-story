@@ -1,20 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Love Story</title>
-    <style>
-        body {
-            background-color: black;
-            color: red;
-            font-family: Arial, sans-serif;
-        }
-    </style>
+    <title>Love Story - Valentine</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>hey el am perdura</h1>
-    <h2>Gradie Nsungimina</h2>
-    <p>What does love mean to you?</p>
+    <div class="container">
+        <p class="salutation">hey el am perdura</p>
+        
+        <h1>Gradie Nsungimina</h1>
+        
+        <h2 class="question">Veux-tu être ma Valentine ?</h2>
+        
+        <div class="buttons">
+            <button class="btn-yes" onclick="yesClicked()">Oui</button>
+            <button class="btn-yes" onclick="yesClicked()">Oui</button>
+        </div>
+        
+        <div id="message" class="message"></div>
+    </div>
+    
+    <script src="script.js"></script>
 </body>
 </html>
