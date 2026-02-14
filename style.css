@@ -1,12 +1,8 @@
-* {
-    box-sizing: border-box;
-}
-
 body {
     margin: 0;
     font-family: "Segoe UI", Arial, sans-serif;
-    background: linear-gradient(135deg, #000, #8b0000);
-    color: #fff;
+    background: linear-gradient(135deg, black, darkred);
+    color: white;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -16,11 +12,11 @@ body {
 .container {
     width: 90%;
     max-width: 500px;
-    text-align: center;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0,0,0,0.65);
     padding: 40px;
     border-radius: 16px;
-    box-shadow: 0 0 25px rgba(255,0,0,0.4);
+    text-align: center;
+    box-shadow: 0 0 30px rgba(255,0,0,0.4);
 }
 
 .page {
@@ -31,26 +27,14 @@ body {
     display: block;
 }
 
-h1 {
-    margin-bottom: 15px;
-}
-
-p {
-    font-size: 18px;
-}
-
-.buttons {
-    margin-top: 25px;
-}
-
 button {
     background: transparent;
-    color: red;
     border: 2px solid red;
+    color: red;
     padding: 10px 25px;
     margin: 10px;
-    font-size: 16px;
     border-radius: 8px;
+    font-size: 16px;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -65,13 +49,10 @@ button:hover {
 }
 
 @keyframes blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.5; }
+    50% { opacity: 0.4; }
 }
 
-/* CONTRAT */
 .contract {
-    margin: 20px 0;
     font-size: 11px;
     line-height: 1.1;
     color: #3a0000;
@@ -81,16 +62,27 @@ button:hover {
 }
 
 .sign {
-    margin-top: 15px;
     font-weight: bold;
+    margin-top: 15px;
 }
 
 .checkbox {
     margin: 15px 0;
-    font-size: 14px;
+}
+
+.email-box {
+    margin-top: 25px;
+}
+
+.email-box input {
+    padding: 8px;
+    width: 90%;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: none;
 }
 
 .love {
     font-size: 22px;
-    margin-top: 20px;
+    margin-top: 15px;
 }
