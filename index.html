@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Valentine</title>
+    <title>Accord Valentine</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -23,29 +23,29 @@
     <!-- PAGE 2A -->
     <section id="page2a" class="page">
         <h1>Bon choix</h1>
-        <p>Tu viens de prendre une excellente décision.</p>
+        <p>Tu avances dans quelque chose de sérieux 😌</p>
         <button onclick="goToPage('page3')">Suivant</button>
     </section>
 
     <!-- PAGE 2B -->
     <section id="page2b" class="page">
-        <h1>Heureusement pour toi 😌</h1>
-        <p>La vie récompense toujours les bons choix.</p>
+        <h1>Heureusement pour toi 😏</h1>
+        <p>Le destin sourit toujours.</p>
         <button onclick="goToPage('page3')">Suivant</button>
     </section>
 
-    <!-- PAGE 3 -->
+    <!-- PAGE 3 : CONTRAT -->
     <section id="page3" class="page">
         <h1>Accord officiel Valentine</h1>
 
         <div class="contract">
             <p>
-                En acceptant cet accord, vous consentez implicitement à une
-                implication émotionnelle non quantifiable, à une loyauté
-                symbolique renforcée, à des sourires répétés, à des moments
-                imprévisibles, à des souvenirs non remboursables et à des
-                aventures pouvant dépasser le cadre rationnel de la logique
-                humaine standard...
+                Le présent accord symbolique engage la personne signataire à une
+                fidélité émotionnelle assumée, à une disponibilité morale non
+                quantifiable, à des aventures imprévues, à des moments de folie
+                contrôlée et à une complicité durable avec <strong>Debora Kweka</strong>.
+                Cet engagement, bien que non juridiquement contraignant,
+                est moralement accepté sans réserve ni condition visible.
             </p>
         </div>
 
@@ -61,11 +61,17 @@
         <button onclick="validateContract()">Continuer</button>
     </section>
 
-    <!-- PAGE 4 -->
+    <!-- PAGE 4 : FINAL + MAIL -->
     <section id="page4" class="page">
         <h1>Merci pour votre fidélité</h1>
         <p>À très bientôt pour plus de folie</p>
         <p class="love">Je t’aime ❤️</p>
+
+        <div class="email-box">
+            <p>Recevoir une copie de l’accord par e-mail :</p>
+            <input type="email" id="email" placeholder="ton.email@gmail.com">
+            <button onclick="sendEmail()">Recevoir l’accord</button>
+        </div>
     </section>
 
 </div>
