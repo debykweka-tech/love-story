@@ -1,15 +1,16 @@
-function yesClicked() {
-    const message = document.getElementById('message');
-    message.textContent = '❤️ Je suis si heureux ! Tu me rends vraiment heureux ! ❤️';
-    message.style.fontSize = '1.8em';
-    message.style.animation = 'pulse 1s infinite';
+function goToPage(pageId) {
+    const pages = document.querySelectorAll(".page");
+    pages.forEach(page => page.classList.remove("active"));
+
+    document.getElementById(pageId).classList.add("active");
 }
 
-const style = document.createElement('style');
-style.textContent = `
-    @keyframes pulse {
-        0%, 100% { transform: scale(1); }
-        50% { transform: scale(1.1); }
+function validateContract() {
+    const checkbox = document.getElementById("accept");
+
+    if (checkbox.checked) {
+        goToPage("page4");
+    } else {
+        alert("Tu dois d’abord approuver l’accord 😌");
     }
-`;
-document.head.appendChild(style);
+}
