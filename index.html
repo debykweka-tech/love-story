@@ -2,26 +2,74 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Love Story - Valentine</title>
+    <title>Valentine</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <p class="salutation">hey el am perdura</p>
-        
-        <h1>Gradie Nsungimina</h1>
-        
-        <h2 class="question">Veux-tu être ma Valentine ?</h2>
-        
+
+<div class="container">
+
+    <!-- PAGE 1 -->
+    <section id="page1" class="page active">
+        <h1>Hey Gra-dee</h1>
+        <p>Veux-tu être ma Valentine ?</p>
+
         <div class="buttons">
-            <button class="btn-yes" onclick="yesClicked()">Oui</button>
-            <button class="btn-yes" onclick="yesClicked()">Oui</button>
+            <button class="blink" onclick="goToPage('page2a')">Oui</button>
+            <button class="blink" onclick="goToPage('page2b')">Oui</button>
         </div>
-        
-        <div id="message" class="message"></div>
-    </div>
-    
-    <script src="script.js"></script>
+    </section>
+
+    <!-- PAGE 2A -->
+    <section id="page2a" class="page">
+        <h1>Bon choix</h1>
+        <p>Tu viens de prendre une excellente décision.</p>
+        <button onclick="goToPage('page3')">Suivant</button>
+    </section>
+
+    <!-- PAGE 2B -->
+    <section id="page2b" class="page">
+        <h1>Heureusement pour toi 😌</h1>
+        <p>La vie récompense toujours les bons choix.</p>
+        <button onclick="goToPage('page3')">Suivant</button>
+    </section>
+
+    <!-- PAGE 3 -->
+    <section id="page3" class="page">
+        <h1>Accord officiel Valentine</h1>
+
+        <div class="contract">
+            <p>
+                En acceptant cet accord, vous consentez implicitement à une
+                implication émotionnelle non quantifiable, à une loyauté
+                symbolique renforcée, à des sourires répétés, à des moments
+                imprévisibles, à des souvenirs non remboursables et à des
+                aventures pouvant dépasser le cadre rationnel de la logique
+                humaine standard...
+            </p>
+        </div>
+
+        <p class="sign">
+            Signe seulement. Tu n’as pas à voir les conditions.
+        </p>
+
+        <div class="checkbox">
+            <input type="checkbox" id="accept">
+            <label for="accept">Lu et approuvé</label>
+        </div>
+
+        <button onclick="validateContract()">Continuer</button>
+    </section>
+
+    <!-- PAGE 4 -->
+    <section id="page4" class="page">
+        <h1>Merci pour votre fidélité</h1>
+        <p>À très bientôt pour plus de folie</p>
+        <p class="love">Je t’aime ❤️</p>
+    </section>
+
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
